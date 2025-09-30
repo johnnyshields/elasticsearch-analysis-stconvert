@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        java: [17, 21, 24]
+        java: [21, 24]
         elasticsearch: ['9.0.0', '9.0.7', '9.1.0', '9.1.4']
 
     steps:
@@ -30,9 +30,10 @@ jobs:
 
       - name: Set Elasticsearch ${{ matrix.elasticsearch }} in POM
         run: |
-          sed -i "s/<elasticsearch.version>.*<\/elasticsearch.version>/<elasticsearch.version>${{ matrix.elasticsearch }}<\/elasticsearch.version>/" pom.xml
+          sed -i "s/<elasticsearch.version>.*<\/elasticsearch.version>/<elasticsearch.version>${{ matrix.elasticsearch }}<\/elasticsearch.version>/" elasticsearch/pom.xml
           echo "Updated Elasticsearch version to ${{ matrix.elasticsearch }}"
-          grep -A 2 "<elasticsearch.version>" pom.xml
+          grep -A 2 "<elasticsearch.version>" elasticsearch/pom.xml
+
       - name: Build and test
         run: mvn verify -B
 
@@ -43,7 +44,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        java: [17, 21, 24]
+        java: [21, 24]
         opensearch: ['2.0.1']
 
     steps:
@@ -59,8 +60,9 @@ jobs:
 
       - name: Set OpenSearch ${{ matrix.opensearch }} in POM
         run: |
-          sed -i "s/<opensearch.version>.*<\/opensearch.version>/<opensearch.version>${{ matrix.opensearch }}<\/opensearch.version>/" pom.xml
+          sed -i "s/<opensearch.version>.*<\/opensearch.version>/<opensearch.version>${{ matrix.opensearch }}<\/opensearch.version>/" opensearch/pom.xml
           echo "Updated OpenSearch version to ${{ matrix.opensearch }}"
-          grep -A 2 "<opensearch.version>" pom.xml
+          grep -A 2 "<opensearch.version>" opensearch/pom.xml
+
       - name: Build and test
         run: mvn verify -B
