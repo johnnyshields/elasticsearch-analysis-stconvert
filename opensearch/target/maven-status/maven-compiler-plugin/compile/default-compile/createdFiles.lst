@@ -1,0 +1,5 @@
+com\infinilabs\stconvert\opensearch\STConvertCharFilterFactory.class
+com\infinilabs\stconvert\opensearch\STConvertTokenFilterFactory.class
+com\infinilabs\stconvert\opensearch\STConvertAnalyzerProvider.class
+com\infinilabs\stconvert\opensearch\AnalysisSTConvertPlugin.class
+com\infinilabs\stconvert\opensearch\STConvertTokenizerFactory.class

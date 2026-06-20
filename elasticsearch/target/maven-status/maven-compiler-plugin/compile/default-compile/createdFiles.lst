@@ -1,0 +1,5 @@
+com/infinilabs/stconvert/elasticsearch/STConvertAnalyzerProvider.class
+com/infinilabs/stconvert/elasticsearch/AnalysisSTConvertPlugin.class
+com/infinilabs/stconvert/elasticsearch/STConvertTokenFilterFactory.class
+com/infinilabs/stconvert/elasticsearch/STConvertTokenizerFactory.class
+com/infinilabs/stconvert/elasticsearch/STConvertCharFilterFactory.class

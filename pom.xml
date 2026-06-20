@@ -33,7 +33,7 @@
     </developers>
 
     <properties>
-        <lucene.version>10.2.2</lucene.version>
+        <lucene.version>10.4.0</lucene.version>
         <maven.compiler.target>17</maven.compiler.target>
 
         <tests.rest.load_packaged>false</tests.rest.load_packaged>

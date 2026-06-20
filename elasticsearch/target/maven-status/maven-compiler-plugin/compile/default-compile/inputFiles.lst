@@ -1,0 +1,5 @@
+/mnt/c/workspace/analysis-stconvert/elasticsearch/src/main/java/com/infinilabs/stconvert/elasticsearch/STConvertCharFilterFactory.java
+/mnt/c/workspace/analysis-stconvert/elasticsearch/src/main/java/com/infinilabs/stconvert/elasticsearch/STConvertTokenFilterFactory.java
+/mnt/c/workspace/analysis-stconvert/elasticsearch/src/main/java/com/infinilabs/stconvert/elasticsearch/AnalysisSTConvertPlugin.java
+/mnt/c/workspace/analysis-stconvert/elasticsearch/src/main/java/com/infinilabs/stconvert/elasticsearch/STConvertAnalyzerProvider.java
+/mnt/c/workspace/analysis-stconvert/elasticsearch/src/main/java/com/infinilabs/stconvert/elasticsearch/STConvertTokenizerFactory.java
